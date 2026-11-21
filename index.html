@@ -9,9 +9,20 @@
 <body>
     <header class="header">
         <h1 class="titulo-principal">Electricista</h1>
-    </header> 
+        <nav class="menu">
+            <a class="menu-link" href="#servicios">Servicios</a>
+            <a class="menu-link" href="#zonas">Zonas</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="hero-titulo">Soluciones eléctricas para tu hogar y tu comercio</h2>
+        <p class="hero-texto">Instalaciones, reparaciones y urgencias. Presupuesto sin cargo.</p>
+        <a class="hero-boton" href="https://www.whatsapp.com/" target="_blank" rel="noopener">Pedí tu presupuesto</a>
+    </section>
+
     <main class="contenido">
-        <section class="servicios">
+        <section class="servicios" id="servicios">
             <h2 class="titulo-seccion">Servicios</h2>
             <ul class="lista-servicios">
                 <li class="card">
@@ -32,7 +43,7 @@
                 </li>
             </ul>
         </section>
-        <section class="zonas">
+        <section class="zonas" id="zonas">
             <h2 class="titulo-seccion">Zonas de trabajo</h2>
             <p class="texto-zonas">Trabajamos en las siguientes zonas:</p>
             <ul class="lista-zonas">
@@ -40,12 +51,17 @@
                 <li class="zona">PBA</li>
             </ul>
         </section>
-        <section class="info">
+        <section class="info" id="contacto">
             <h2 class="titulo-seccion">Contacto</h2>
             <p class="dato-contacto">Teléfono: 123-456-7890</p>
             <p class="dato-contacto">Email: info@electricista.com</p>
         </section>
     </main>
+
+    <section class="cierre">
+        <h2 class="cierre-titulo">¿Necesitás un electricista?</h2>
+        <a class="hero-boton" href="https://www.whatsapp.com/" target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+    </section>
 
     <footer class="footer">
         <p class="texto-footer"> 2026 Maqueta landing page . Todos los derechos reservados para Verdi.code.</p>     
