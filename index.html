@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +8,50 @@
 </head>
 <body>
     <header class="header">
-        <h1>Electricista</h1>
+        <h1 class="titulo-principal">Electricista</h1>
     </header> 
-    <main>
-        <section class="card">
-            <h2>Servicios</h2>
-            <ul>
-                <li>Instalación eléctrica</li>
-                <li>Mantenimiento de sistemas eléctricos</li>
-                <li>Reparación de cortocircuitos</li>
-                <li>Asesoramiento en eficiencia energética</li>
+    <main class="contenido">
+        <section class="servicios">
+            <h2 class="titulo-seccion">Servicios</h2>
+            <ul class="lista-servicios">
+                <li class="card">
+                    <span class="card-icono">⚡</span>
+                    <p class="card-texto">Instalación eléctrica</p>
+                </li>
+                <li class="card">
+                    <span class="card-icono">🔧</span>
+                    <p class="card-texto">Mantenimiento de sistemas eléctricos</p>
+                </li>
+                <li class="card">
+                    <span class="card-icono">🔌</span>
+                    <p class="card-texto">Reparación de cortocircuitos</p>
+                </li>
+                <li class="card">
+                    <span class="card-icono">💡</span>
+                    <p class="card-texto">Asesoramiento en eficiencia energética</p>
+                </li>
             </ul>
         </section>
-
+        <section class="zonas">
+            <h2 class="titulo-seccion">Zonas de trabajo</h2>
+            <p class="texto-zonas">Trabajamos en las siguientes zonas:</p>
+            <ul class="lista-zonas">
+                <li class="zona">CABA</li>
+                <li class="zona">PBA</li>
+            </ul>
+        </section>
         <section class="info">
-            <h2>Contacto</h2>
-            <p>Teléfono: 123-456-7890</p>
-            <p>Email: info@electricista.com</p>
+            <h2 class="titulo-seccion">Contacto</h2>
+            <p class="dato-contacto">Teléfono: 123-456-7890</p>
+            <p class="dato-contacto">Email: info@electricista.com</p>
         </section>
     </main>
+
     <footer class="footer">
-        <p> 2024 Electricista. Todos los derechos reservados.</p>     
+        <p class="texto-footer"> 2026 Maqueta landing page . Todos los derechos reservados para Verdi.code.</p>     
     </footer>
+    <a class="burbuja-whatsapp" href="https://www.whatsapp.com/" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+        <img class="burbuja-icono" src="img/whatsapp.webp" alt="WhatsApp">
+    </a>
 </body>
 </html>
