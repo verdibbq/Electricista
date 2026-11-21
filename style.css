@@ -1,0 +1,152 @@
+
+:root {
+    --azul-principal: #1d4ed8;
+    --azul-oscuro: #1e3a8a;
+    --azul-claro: #eff6ff;
+    --texto: #1f2937;
+    --texto-suave: #4b5563;
+    --blanco: #ffffff;
+    --fondo: #f3f4f6;
+    --borde: #dbe3f0;
+    --radio: 10px;
+    --ancho-maximo: 900px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--texto);
+    background-color: var(--fondo);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+
+
+.contenido {
+    flex: 1;
+    width: 100%;
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+.titulo-seccion {
+    font-size: 1.4rem;
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--azul-principal);
+}
+
+
+
+.card {
+    background-color: var(--blanco);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+}
+
+.lista-servicios {
+    list-style: none;
+}
+
+.servicio {
+    padding: 0.6rem 0 0.6rem 1.5rem;
+    border-bottom: 1px solid var(--borde);
+    position: relative;
+}
+
+.servicio:last-child {
+    border-bottom: none;
+}
+
+
+.servicio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--azul-principal);
+    transform: translateY(-50%);
+}
+
+
+
+.info {
+    background-color: var(--azul-claro);
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 1.5rem;
+}
+
+.dato-contacto {
+    color: var(--texto-suave);
+    margin-bottom: 0.4rem;
+}
+
+.dato-contacto:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 1.2rem 1rem;
+    text-align: center;
+}
+
+.texto-footer {
+    font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 600px) {
+    .titulo-principal {
+        font-size: 1.6rem;
+    }
+
+    .contenido {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .card,
+    .info {
+        padding: 1.1rem;
+    }
+}
